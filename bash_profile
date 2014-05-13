@@ -12,7 +12,7 @@ if [[ -e ~/.secrets ]]; then
   source ~/.secrets
 fi
 
-export PATH="$HOME/workspace/dotfiles/bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/work/dotfiles/bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH"
 
 export EDITOR="subl -w"
 
