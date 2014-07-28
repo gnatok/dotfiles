@@ -1,0 +1,33 @@
+source ~/.bash_aliases
+source ~/.bash_functions
+
+if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
+  source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
+fi
+
+if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
+  source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+fi
+
+# Use .secrets for stuff that you don't want to share in your public, versioned repo.
+if [[ -e ~/.secrets ]]; then
+  source ~/.secrets
+fi
+
+export PATH="$HOME/.bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH"
+export EDITOR="subl -w"
+
+# Evaluate rbenv
+eval "$(rbenv init -)"
+
+# Define some colors
+BLACK='\e[0;30m'
+RED='\e[0;31m'
+GREEN='\e[0;32m'
+YELLOW='\e[0;33m'
+BLUE='\e[0;34m'
+CYAN='\e[0;36m'
+RESET='\e[0m'
+
+# Prompt style
+export PS1="$YELLOW\$(ruby_version)on$(rails_version)$RESET \u: \w$CYAN\$(__git_ps1)$RED\$(git_dirty)$RESET\$ "

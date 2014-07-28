@@ -1,0 +1,74 @@
+alias reload='source ~/.bash_profile'
+
+alias q='exit'
+
+alias please='sudo'
+
+alias h='history'
+alias hi='history | tail -20'
+
+alias l='ls -laGFh'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias cdd='cd -'
+
+alias numfiles='echo $(ls -1 | wc -l)'
+
+alias psa='ps aux'
+alias psg='ps aux | grep $1'
+
+alias ka9='killall -9'
+alias k9='kill -9'
+
+alias df='df -h' # humanize sizes
+
+alias cp='cp -i' # confirm before overwrite
+
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to clipboard.'"
+alias hosts='more /etc/hosts'
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+alias week='date +%V'
+alias day='date +%d'
+
+alias chrome="open -a google\ chrome"
+alias safari="open -a safari"
+alias firefox="open -a firefox"
+alias skype='open -a Skype'
+alias mou='open -a Mou'
+
+alias c='pbcopy'
+alias p='pbpaste'
+
+alias tf='tail -f'
+alias devlog='tail -f log/development.log'
+
+alias post='curl -i -X POST'
+alias get='curl -i -X GET'
+
+alias gst='git status'
+alias gco='git checkout'
+alias gd='git diff'
+alias gb='git branch'
+alias gs='git show'
+alias gcl='git clone'
+
+alias rb='ruby'
+alias rs='rails s'
+alias rc='rails c'
+alias rg='rails g'
+alias rd='rails d'
+
+alias gemi='gem install --no-ri --no-rdoc'
+alias gemu='gem uninstall'
+
+alias b='bundle'
+alias be='bundle exec'
+alias bi='bundle install'
+alias bu='bundle update'
+
+alias rr='bundle exec rake routes'
+alias rt='bundle exec rake -T --all'
+
+alias jks='jekyll server -w'
+alias jkb='jekyll build'

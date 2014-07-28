@@ -1,6 +1,6 @@
 # Markets dotfiles [![markets/dotfiles](http://img.shields.io/badge/markets-dotfiles-blue.svg)](https://github.com/markets/dotfiles)
 
-These are some config files (git, bash, aliases, ruby, sublime text 2, ...) to set up some useful settings that I like :ok_hand:
+These are some config files (git, bash, aliases, ruby, sublime text, ...) and some custom scripts to set up a useful settings and tools that I like and I use every day :ok_hand:
 
 ## Installation
 Run this:
@@ -28,7 +28,6 @@ You can remove :boom: this configuration with:
 ```
 script/uninstall
 ```
-
 ## Prompt
 Includes `Rails` version:
 
